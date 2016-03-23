@@ -3,7 +3,7 @@
 casper.test.begin('Deve informar login invalido ao informar credenciais errada',2, function suite(test){
 
 	casper.start(URL,function(){
-		login(this, 'mauricioteste@gmail.com', '123');
+		login(this, 'asdasdas@gmail.com', '123122332');
 	});
 
 	casper.then(function(){

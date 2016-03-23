@@ -9,7 +9,7 @@ casper.on('step.error', function(failure) {
 
 
 function successfullLogin(casp){
-	login(casp, 'mauricio.sganderla@canoastec.rs.gov.br', 'Canoas@123');
+	login(casp, 'xxxzzzz', 'qweqweqw');
 }
 
 function login(casp, user, password){
