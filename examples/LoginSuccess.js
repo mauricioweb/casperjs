@@ -1,15 +1,7 @@
-casper.options.pageSettings.loadImages = false;
-
 casper.test.begin('Deve redirecionar para pagina de listagem de mulher ao logar',2, function suite(test){
 
-	casper.start('http://crmlaravel-dsv.pmcanoas.rs.gov.br',function(){
-
-		this.fill('form',{
-					'email' : 'mauricio.sganderla@canoastec.rs.gov.br',
-					'password' : 'Canoas@123'
-					}, true
-				);
-
+	casper.start(URL,function(){
+		successfullLogin(this);
 	});
 
 	casper.then(function(){
@@ -18,7 +10,7 @@ casper.test.begin('Deve redirecionar para pagina de listagem de mulher ao logar'
 	});
 
 	casper.run(function(){
-		this.click("#logout a");
+		logout(this);
 		test.done();
 	});
 
